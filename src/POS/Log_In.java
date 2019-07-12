@@ -9,6 +9,11 @@ package POS;
  *
  * @author jennifer
  */
+
+
+import java.util.*;
+
+
 public class Log_In extends javax.swing.JFrame {
 
     /**
@@ -26,44 +31,42 @@ public class Log_In extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         jTextField2 = new javax.swing.JTextField();
-        SignIn = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        ID_Field = new javax.swing.JTextField();
+        PW_Field = new javax.swing.JPasswordField();
+        ID = new javax.swing.JLabel();
+        PW = new javax.swing.JLabel();
+        SignInButton = new javax.swing.JButton();
 
         jTextField2.setText("jTextField2");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
-        SignIn.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
-        SignIn.setText("Sign In");
-
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, SignIn, org.jdesktop.beansbinding.ELProperty.create("${font.family}"), SignIn, org.jdesktop.beansbinding.BeanProperty.create("font"));
-        bindingGroup.addBinding(binding);
-
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        ID_Field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                ID_FieldActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 15)); // NOI18N
-        jLabel1.setText("ID:");
-
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 15)); // NOI18N
-        jLabel2.setText("PW:");
-
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Sign In");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        PW_Field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                PW_FieldActionPerformed(evt);
+            }
+        });
+
+        ID.setFont(new java.awt.Font("Lucida Grande", 0, 15)); // NOI18N
+        ID.setText("ID:");
+
+        PW.setFont(new java.awt.Font("Lucida Grande", 0, 15)); // NOI18N
+        PW.setText("PW:");
+
+        SignInButton.setBackground(new java.awt.Color(255, 255, 255));
+        SignInButton.setText("Sign In");
+        SignInButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignInButtonActionPerformed(evt);
             }
         });
 
@@ -73,54 +76,70 @@ public class Log_In extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(108, 108, 108)
-                .addComponent(jButton1)
+                .addComponent(SignInButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(54, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(54, 54, 54))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(SignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(99, 99, 99))))
+                    .addComponent(ID, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(PW, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PW_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ID_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(SignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(107, 107, 107)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(ID_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ID))
                 .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(PW)
+                    .addComponent(PW_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(SignInButton)
                 .addContainerGap(56, Short.MAX_VALUE))
         );
-
-        bindingGroup.bind();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+   
+    private void SignInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButtonActionPerformed
+        
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // for test purposes, we add 123 and 123 to Employee_Password
+        //Employee_Password.put(123, 123);
+        
+
+        // !!! Before all these, we need load and save from Employee_Info (two hashmaps)
+        String username = ID_Field.getText();
+        String password = PW_Field.getText();
+        
+        if (username.equals("uname") && password.equals("password")) {
+            dispose();
+            POS_System Window = new POS_System();
+            Window.setVisible(true);
+            }
+        else {
+            // !!! print out the message - the employee ID does not exist, please try again.
+        }
+        
+  
+        
+    }//GEN-LAST:event_SignInButtonActionPerformed
+
+    private void PW_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PW_FieldActionPerformed
+
+    }//GEN-LAST:event_PW_FieldActionPerformed
+
+    private void ID_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ID_FieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_ID_FieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,13 +177,19 @@ public class Log_In extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SignIn;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel ID;
+    private javax.swing.JTextField ID_Field;
+    private javax.swing.JLabel PW;
+    private javax.swing.JPasswordField PW_Field;
+    private javax.swing.JButton SignInButton;
     private javax.swing.JTextField jTextField2;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
+    
+    // EMPLOYEE NUMBER and their Personal Information
+    // !!! might be a better idea to combine the hashmap into one 
+    public HashMap <Integer, Integer> Employee_Password;
+    public HashMap <Integer, String> Employee_Name;
+   
+    
+
 }
