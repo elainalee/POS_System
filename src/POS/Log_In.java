@@ -11,7 +11,8 @@ package POS;
  */
 
 
-import java.util.*;
+import javax.swing.*;
+
 
 
 public class Log_In extends javax.swing.JFrame {
@@ -34,12 +35,9 @@ public class Log_In extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel6 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        ID_Field = new javax.swing.JTextField();
-        PW_Field = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        SignIn = new javax.swing.JButton();
+        SignIn_Label = new javax.swing.JLabel();
+        Password = new javax.swing.JPasswordField();
+        Button_SignIn = new javax.swing.JButton();
         Message = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -47,19 +45,20 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
-        jLabel4.setText("Sign In");
+        SignIn_Label.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
+        SignIn_Label.setText("Sign In");
 
-        jLabel1.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 15)); // NOI18N
-        jLabel1.setText("ID:");
-
-        jLabel2.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 15)); // NOI18N
-        jLabel2.setText("PW:");
-
-        SignIn.setText("Sign In");
-        SignIn.addActionListener(new java.awt.event.ActionListener() {
+        Password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SignInActionPerformed(evt);
+                PasswordActionPerformed(evt);
+            }
+        });
+
+        Button_SignIn.setBackground(new java.awt.Color(255, 255, 255));
+        Button_SignIn.setText("Sign In");
+        Button_SignIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_SignInActionPerformed(evt);
             }
         });
 
@@ -70,47 +69,37 @@ public class Log_In extends javax.swing.JFrame {
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(106, 106, 106)
+                        .addComponent(Button_SignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(57, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(109, 109, 109))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addComponent(jLabel2)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(PW_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(Message, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(ID_Field, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE))))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(SignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(SignIn_Label)
+                        .addGap(109, 109, 109))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(70, 70, 70))))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addComponent(jLabel4)
+                .addComponent(SignIn_Label)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ID_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PW_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(SignIn)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Button_SignIn)
+                .addContainerGap(87, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -127,33 +116,20 @@ public class Log_In extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInActionPerformed
-        try {
-            int username = Integer.parseInt(ID_Field.getText());
-            int password = Integer.parseInt(PW_Field.getText());
-            
-            // If the owner is trying to log into the system
-            if (username == Owner_ID && password == Owner_PW) {
-                dispose();
-                OpenWindow_Owner Window = new OpenWindow_Owner();
-                Window.setVisible(true);
-            }
-            // !!! let there be only one employee for now
-            else if (username == Employee_ID && password == Employee_PW) {
-                dispose();
-                OpenWindow_Employee Window = new OpenWindow_Employee();
-                Window.setVisible(true);
-            }
-            else {
-                Message.setText("Wrong ID or Password");
-            }
+    private void Button_SignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_SignInActionPerformed
+        if (Password.getText().equals(thePW)) {
+            dispose();
+            OpenWindow Window = new OpenWindow();
+            Window.setVisible(true);
         }
-        catch (Exception e) {
-            Message.setText("Invalid ID or Password");
+        
+        else {
+            JOptionPane.showMessageDialog(null, "Wrong password. Please try again.");
         }
-    }//GEN-LAST:event_SignInActionPerformed
+    }//GEN-LAST:event_Button_SignInActionPerformed
+    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
 
-   
+    }//GEN-LAST:event_PasswordActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -180,6 +156,7 @@ public class Log_In extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Log_In.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+       
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -190,13 +167,10 @@ public class Log_In extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField ID_Field;
+    private javax.swing.JButton Button_SignIn;
     private javax.swing.JLabel Message;
-    private javax.swing.JPasswordField PW_Field;
-    private javax.swing.JButton SignIn;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPasswordField Password;
+    private javax.swing.JLabel SignIn_Label;
     private javax.swing.JPanel jPanel6;
     // End of variables declaration//GEN-END:variables
     
@@ -206,21 +180,10 @@ public class Log_In extends javax.swing.JFrame {
     /**
      *
      */
-    public int Owner_ID;
-    public int Owner_PW;
-    // !!! let there be only one employee for now
-    public int Employee_ID;
-    public int Employee_PW;
+    public String thePW;
 
     // Helper methods
     private void declarations() {
-        Owner_ID = 123;
-        Owner_PW = 123;
-        // !!! let there be only one employee for now
-        Employee_ID = 1234;
-        Employee_PW = 1234;
+        thePW = "1";
     }
-   
-    
-
 }

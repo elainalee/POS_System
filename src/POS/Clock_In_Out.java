@@ -1,27 +1,48 @@
-package POS;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package POS;
+
+import java.awt.Color;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.lang.String;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.sql.Array;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import POS.Variables;
 
 /**
  *
  * @author jennifer
  */
-import javax.swing.JOptionPane;
-import java.awt.Toolkit;
-import java.awt.event.WindowEvent;
-import POS.POS_System;
-
-public class Clock_In_Out extends javax.swing.JFrame {
+public class Clock_In_Out extends javax.swing.JFrame{
+    
+    // database EmployeeDataBase
+    // ID: owner
+    // PW: password
 
     /**
-     * Creates new form POS_System
+     * Creates new form Clock_In_Out_2
      */
     public Clock_In_Out() {
         initComponents();
+        IN.setEnabled(false);
+        OUT.setEnabled(false);
+        OK.setEnabled(false);
     }
 
     /**
@@ -33,34 +54,147 @@ public class Clock_In_Out extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jPanel2 = new javax.swing.JPanel();
+        Panel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         Password = new javax.swing.JPasswordField();
-        jPanel3 = new javax.swing.JPanel();
+        Message = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         Button1 = new javax.swing.JButton();
-        Button4 = new javax.swing.JButton();
-        Button7 = new javax.swing.JButton();
-        Button8 = new javax.swing.JButton();
+        Button3 = new javax.swing.JButton();
         Button5 = new javax.swing.JButton();
         Button2 = new javax.swing.JButton();
-        Button3 = new javax.swing.JButton();
+        Button4 = new javax.swing.JButton();
         Button6 = new javax.swing.JButton();
-        Button9 = new javax.swing.JButton();
+        Button7 = new javax.swing.JButton();
+        Button8 = new javax.swing.JButton();
         Button0 = new javax.swing.JButton();
-        Button_Clear = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        Button_Ok = new javax.swing.JButton();
-        Button_In = new javax.swing.JButton();
-        Button_Out = new javax.swing.JButton();
-        Button_Cancel = new javax.swing.JButton();
-
-        jRadioButton1.setText("jRadioButton1");
+        Button9 = new javax.swing.JButton();
+        CLEAR = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        OK = new javax.swing.JButton();
+        IN = new javax.swing.JButton();
+        OUT = new javax.swing.JButton();
+        Cancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Password.addActionListener(new java.awt.event.ActionListener() {
+        Panel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        Message.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 12)); // NOI18N
+        Message.setForeground(new java.awt.Color(255, 51, 51));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(Message, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        Button1.setBackground(new java.awt.Color(255, 255, 255));
+        Button1.setText("1");
+        Button1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasswordActionPerformed(evt);
+                Button1ActionPerformed(evt);
+            }
+        });
+
+        Button3.setBackground(new java.awt.Color(255, 255, 255));
+        Button3.setText("3");
+        Button3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button3ActionPerformed(evt);
+            }
+        });
+
+        Button5.setBackground(new java.awt.Color(255, 255, 255));
+        Button5.setText("5");
+        Button5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button5ActionPerformed(evt);
+            }
+        });
+
+        Button2.setBackground(new java.awt.Color(255, 255, 255));
+        Button2.setText("2");
+        Button2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button2ActionPerformed(evt);
+            }
+        });
+
+        Button4.setBackground(new java.awt.Color(255, 255, 255));
+        Button4.setText("4");
+        Button4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button4ActionPerformed(evt);
+            }
+        });
+
+        Button6.setBackground(new java.awt.Color(255, 255, 255));
+        Button6.setText("6");
+        Button6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button6ActionPerformed(evt);
+            }
+        });
+
+        Button7.setBackground(new java.awt.Color(255, 255, 255));
+        Button7.setText("7");
+        Button7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button7ActionPerformed(evt);
+            }
+        });
+
+        Button8.setBackground(new java.awt.Color(255, 255, 255));
+        Button8.setText("8");
+        Button8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button8ActionPerformed(evt);
+            }
+        });
+
+        Button0.setBackground(new java.awt.Color(255, 255, 255));
+        Button0.setText("0");
+        Button0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button0ActionPerformed(evt);
+            }
+        });
+
+        Button9.setBackground(new java.awt.Color(255, 255, 255));
+        Button9.setText("9");
+        Button9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button9ActionPerformed(evt);
+            }
+        });
+
+        CLEAR.setBackground(new java.awt.Color(255, 255, 255));
+        CLEAR.setText("CLEAR");
+        CLEAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CLEARActionPerformed(evt);
             }
         });
 
@@ -70,91 +204,89 @@ public class Clock_In_Out extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Button0, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(Password, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Button0, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CLEAR, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        Button1.setText("1");
-        Button1.addActionListener(new java.awt.event.ActionListener() {
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        OK.setBackground(new java.awt.Color(255, 255, 255));
+        OK.setText("OK");
+        OK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button1ActionPerformed(evt);
+                OKActionPerformed(evt);
             }
         });
 
-        Button4.setText("4");
-        Button4.addActionListener(new java.awt.event.ActionListener() {
+        IN.setBackground(new java.awt.Color(255, 255, 255));
+        IN.setText("IN");
+        IN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button4ActionPerformed(evt);
+                INActionPerformed(evt);
             }
         });
 
-        Button7.setText("7");
-        Button7.addActionListener(new java.awt.event.ActionListener() {
+        OUT.setBackground(new java.awt.Color(255, 255, 255));
+        OUT.setText("OUT");
+        OUT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button7ActionPerformed(evt);
+                OUTActionPerformed(evt);
             }
         });
 
-        Button8.setText("8");
-        Button8.addActionListener(new java.awt.event.ActionListener() {
+        Cancel.setBackground(new java.awt.Color(255, 255, 255));
+        Cancel.setText("Cancel");
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button8ActionPerformed(evt);
-            }
-        });
-
-        Button5.setText("5");
-        Button5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button5ActionPerformed(evt);
-            }
-        });
-
-        Button2.setText("2");
-        Button2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button2ActionPerformed(evt);
-            }
-        });
-
-        Button3.setText("3");
-        Button3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button3ActionPerformed(evt);
-            }
-        });
-
-        Button6.setText("6");
-        Button6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button6ActionPerformed(evt);
-            }
-        });
-
-        Button9.setText("9");
-        Button9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button9ActionPerformed(evt);
-            }
-        });
-
-        Button0.setText("0");
-        Button0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button0ActionPerformed(evt);
-            }
-        });
-
-        Button_Clear.setText("CLEAR");
-        Button_Clear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button_ClearActionPerformed(evt);
+                CancelActionPerformed(evt);
             }
         });
 
@@ -165,225 +297,207 @@ public class Clock_In_Out extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(Button0, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Button_Clear, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(OK, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IN, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OUT, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(Cancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addComponent(OK, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76)
+                .addComponent(IN, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Button0, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Button_Clear, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(OUT, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addComponent(Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
 
-        Button_Ok.setText("OK");
-        Button_Ok.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button_OkActionPerformed(evt);
-            }
-        });
-
-        Button_In.setBackground(new java.awt.Color(255, 255, 255));
-        Button_In.setText("IN");
-        Button_In.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button_InActionPerformed(evt);
-            }
-        });
-
-        Button_Out.setText("OUT");
-        Button_Out.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button_OutActionPerformed(evt);
-            }
-        });
-
-        Button_Cancel.setText("Cancel");
-        Button_Cancel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button_CancelActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout PanelLayout = new javax.swing.GroupLayout(Panel);
+        Panel.setLayout(PanelLayout);
+        PanelLayout.setHorizontalGroup(
+            PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Button_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Button_Out, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Button_In, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Button_Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(Button_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(Button_In, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
-                .addComponent(Button_Out, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addComponent(Button_Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        PanelLayout.setVerticalGroup(
+            PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(PanelLayout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+            .addComponent(Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Button_OkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_OkActionPerformed
-        // !!! check if the employee number is in the hashmap 
-        //  - if not, message: the employee number does not exist, pleas try again
-        //  - if yes, allow the program to accept "IN" or "OUT" button
-        //  - if they have not clocked in, only the clock in button is available
-        //  - if they have clocked in, only the clock out button is available
-        int PW = Integer.parseInt(Password.getText());
-        if (PW == LOGIN_PW) {
-            System_Exit();
-            POS_System POS_Window = new POS_System();
-            POS_Window.setVisible(true);
-            
-        }
-        else {
-            
-        }
-    }//GEN-LAST:event_Button_OkActionPerformed
-
     private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
         Password.setText(Password.getText() + "1");
-        
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button1ActionPerformed
 
-    private void Button_InActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_InActionPerformed
-        // !!! If pressed, need to check if the okay button has worked (if employee number exists)
-        //  - If yes && the employee has not clocked in yet: let them clock into the system
-        //  - If not, disable this button
-    }//GEN-LAST:event_Button_InActionPerformed
-
-    private void Button_CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_CancelActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_Button_CancelActionPerformed
-
-    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasswordActionPerformed
- 
     private void Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2ActionPerformed
         Password.setText(Password.getText() + "2");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button2ActionPerformed
 
     private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
         Password.setText(Password.getText() + "3");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button3ActionPerformed
 
     private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
         Password.setText(Password.getText() + "4");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button4ActionPerformed
 
     private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
         Password.setText(Password.getText() + "5");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button5ActionPerformed
 
     private void Button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button6ActionPerformed
         Password.setText(Password.getText() + "6");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button6ActionPerformed
 
     private void Button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button7ActionPerformed
         Password.setText(Password.getText() + "7");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button7ActionPerformed
 
     private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
         Password.setText(Password.getText() + "8");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button8ActionPerformed
 
     private void Button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button9ActionPerformed
         Password.setText(Password.getText() + "9");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button9ActionPerformed
 
     private void Button0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button0ActionPerformed
         Password.setText(Password.getText() + "0");
+        OK.setEnabled(true);
     }//GEN-LAST:event_Button0ActionPerformed
 
-    private void Button_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_ClearActionPerformed
+    private void CLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CLEARActionPerformed
         Password.setText(null);
-    }//GEN-LAST:event_Button_ClearActionPerformed
+        OK.setEnabled(false);
+    }//GEN-LAST:event_CLEARActionPerformed
 
-    private void Button_OutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_OutActionPerformed
-        // !!! If pressed, need to check if the okay button has worked (If employee number exists)
-        //  - If yes && the employee has not clock in: print out the message - ___ worked from ___ to ___
-        //      then save to the system
-        //  - If not: disable the button
-    }//GEN-LAST:event_Button_OutActionPerformed
+    private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
+        String GivenPassword = Password.getText();
+        String LocationOfFile = "/Users/jennifer/NetBeansProjects/POS System/src/files/_" + GivenPassword;
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(LocationOfFile));
+            disableButtons();
+            if (lines.isEmpty()) {
+                IN.setBackground(Color.YELLOW);
+                IN.setEnabled(true);
+            }
+            else {
+                ArrayList<String> lastLine = splitOnSpace(lines.get(lines.size() - 1));
+                if (lastLine.get(0).equals("IN")) {
+                    OUT.setBackground(Color.YELLOW);
+                    OUT.setEnabled(true);
+                    
+                }
+                else if (lastLine.get(0).equals("OUT")){
+                    IN.setBackground(Color.YELLOW);
+                    IN.setEnabled(true);
+                }
+            }
+        }
+        catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Invalid Employee Number");
+        }
+    }//GEN-LAST:event_OKActionPerformed
+
+    private void INActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_INActionPerformed
+        try {
+            IN.setEnabled(false);
+            PrintWriter context;
+            // !!! If pressed, need to check if the okay button has worked (if employee number exists)
+            //  - If yes && the employee has not clocked in yet: let them clock into the system
+            //  - If not, disable this button
+            SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+            Date date = new Date(System.currentTimeMillis());
+            System.out.println(formatter.format(date));
+            
+            IN.setBackground(Color.WHITE);
+            String GivenPassword = Password.getText();
+            
+            String LocationOfFile = "/Users/jennifer/NetBeansProjects/POS System/src/files/_" + GivenPassword;
+            context = new PrintWriter(new FileWriter(LocationOfFile, true));
+            
+            context.println("IN" + " : " + formatter.format(date));
+            JOptionPane.showMessageDialog(null, GivenPassword + " has been clocked in.");
+            context.close();
+            
+            enableButtons();
+        } catch (IOException ex) {
+            Logger.getLogger(Clock_In_Out.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_INActionPerformed
+
+    private void OUTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OUTActionPerformed
+        try {
+            IN.setEnabled(false);
+            PrintWriter context;
+            // !!! If pressed, need to check if the okay button has worked (If employee number exists)
+            //  - If yes && the employee has not clock in: print out the message - ___ worked from ___ to ___
+            //      then save to the system
+            //  - If not: disable the button
+            SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+            Date date = new Date(System.currentTimeMillis());
+            System.out.println(formatter.format(date));
+            
+            OUT.setBackground(Color.WHITE);
+            String GivenPassword = Password.getText();
+            
+            String LocationOfFile = "/Users/jennifer/NetBeansProjects/POS System/src/files/_" + GivenPassword;
+            context = new PrintWriter(new FileWriter(LocationOfFile, true));
+            
+            context.println("OUT" + " : " + formatter.format(date));
+            JOptionPane.showMessageDialog(null, GivenPassword + " has been clocked out.");
+            context.close();
+            enableButtons();
+        } catch (IOException ex) {
+            Logger.getLogger(Clock_In_Out.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_OUTActionPerformed
+
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
+        dispose();
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -412,15 +526,15 @@ public class Clock_In_Out extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
+                
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Clock_In_Out().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -434,25 +548,54 @@ public class Clock_In_Out extends javax.swing.JFrame {
     private javax.swing.JButton Button7;
     private javax.swing.JButton Button8;
     private javax.swing.JButton Button9;
-    private javax.swing.JButton Button_Cancel;
-    private javax.swing.JButton Button_Clear;
-    private javax.swing.JButton Button_In;
-    private javax.swing.JButton Button_Ok;
-    private javax.swing.JButton Button_Out;
+    private javax.swing.JButton CLEAR;
+    private javax.swing.JButton Cancel;
+    private javax.swing.JButton IN;
+    private javax.swing.JLabel Message;
+    private javax.swing.JButton OK;
+    private javax.swing.JButton OUT;
+    private javax.swing.JPanel Panel;
     private javax.swing.JPasswordField Password;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JRadioButton jRadioButton1;
     // End of variables declaration//GEN-END:variables
-    // Declared private variables
-    private int LOGIN_PW = 1234;
-    
-    // Helper functions
-    private void System_Exit() {
-        WindowEvent system_Exit = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
+
+
+    private void disableButtons () {
+        Button0.setEnabled(false);
+        Button1.setEnabled(false);
+        Button2.setEnabled(false);
+        Button3.setEnabled(false);
+        Button4.setEnabled(false);
+        Button5.setEnabled(false);
+        Button6.setEnabled(false);
+        Button7.setEnabled(false);
+        Button8.setEnabled(false);
+        Button9.setEnabled(false);
+        CLEAR.setEnabled(false);
+        OK.setEnabled(false);
+        IN.setEnabled(false);
+        OUT.setEnabled(false);
     }
 
-
-
+    private void enableButtons() {
+        Button0.setEnabled(true);
+        Button1.setEnabled(true);
+        Button2.setEnabled(true);
+        Button3.setEnabled(true);
+        Button4.setEnabled(true);
+        Button5.setEnabled(true);
+        Button6.setEnabled(true);
+        Button7.setEnabled(true);
+        Button8.setEnabled(true);
+        Button9.setEnabled(true);
+        CLEAR.setEnabled(true);
+        OK.setEnabled(true);
+    }
+    
+    public ArrayList<String> splitOnSpace(String line) {
+        String[] splits = line.split(" : ");
+        return new ArrayList<>(Arrays.asList(splits)); //To change body of generated methods, choose Tools | Templates.
+    }
 }

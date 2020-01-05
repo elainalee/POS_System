@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JProgressBar" name="jProgressBar1">
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton80">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton80"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="Panel_Function" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="Panel_Bill" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Panel_Function" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Panel_Bill" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel4" max="32767" attributes="0"/>
+                          <Component id="Panel_Pay" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Panel_Pay" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="Label_Server" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Server_Field" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="Label_Guest" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="Guest_Field" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="Label_TableNum" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="TableNumber_Field" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="151" pref="151" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Info_Button" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Label_Server" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Server_Field" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Label_TableNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="TableNumber_Field" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Label_Guest" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Guest_Field" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="Info_Button" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="376" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="Label_Server">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Server:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Label_TableNum">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Table #:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Label_Guest">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Guests:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Server_Field">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Hyehwa Lee"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="TableNumber_Field">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="1"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Guest_Field">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="1"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="Info_Button">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="INFO"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Info_ButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JList" name="Items_List">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                          <StringArray count="5">
+                            <StringItem index="0" value="Item 1"/>
+                            <StringItem index="1" value="Item 2"/>
+                            <StringItem index="2" value="Item 3"/>
+                            <StringItem index="3" value="Item 4"/>
+                            <StringItem index="4" value="Item 5"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Panel_Pay">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="Panel_Tax" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Panel_Total" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Panel_Tax" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Panel_Total" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="Panel_Tax">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="88" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jLabel3">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Sans Unicode" size="15" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="S.Total:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel4">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Sans Unicode" size="15" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="GST:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel5">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Sans Unicode" size="15" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="PST:"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="Panel_Total">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Label_Total" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <Component id="Total_Amount" min="-2" pref="93" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Label_Total" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Total_Amount" min="-2" pref="44" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="Label_Total">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Sans Unicode" size="15" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Total:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Total_Amount">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Sans Unicode" size="18" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="$0.00"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel5">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Panel_No" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jTabbedPane1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jTabbedPane1" min="-2" pref="368" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Panel_No" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[485, 300]"/>
+                </Property>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel3">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Appetizer">
+                        <Property name="tabTitle" type="java.lang.String" value="Appetizer"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="Miso" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="House_Salad" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Seafood_Salad" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Gyoza" min="-2" pref="110" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="Okonomiyaki" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Takoyaki" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Chicken_Karage" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Croquette" min="-2" pref="110" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="Agedashi_Tofu" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Gomae" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Tuna_Gomae" min="-2" pref="110" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Miso" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="House_Salad" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Seafood_Salad" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Gyoza" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Okonomiyaki" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Takoyaki" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Chicken_Karage" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Croquette" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Agedashi_Tofu" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Gomae" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Tuna_Gomae" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="85" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="Miso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Miso"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="House_Salad">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="House Salad"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Seafood_Salad">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Seafood Salad"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Gyoza">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Gyoza"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Okonomiyaki">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Okonomiyaki"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Takoyaki">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Takoyaki"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Chicken_Karage">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Chicken Karage"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Croquette">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Croquette"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Tuna_Gomae">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tuna Gomae"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Gomae">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Gomae"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Agedashi_Tofu">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agedashi Tofu"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel10">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Roll">
+                        <Property name="tabTitle" type="java.lang.String" value="Roll"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Seperator_Roll" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Avo_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Kappa_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Cali_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Dyna_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Osinko_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Tamago_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Chicken_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Beef_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Unagi_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Yam_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Sal_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Tuna_Roll" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="To_Cone" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="To_BrownRice" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Avo_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Kappa_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Cali_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Dyna_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Osinko_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Tamago_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Chicken_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Beef_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Unagi_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Yam_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Sal_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Tuna_Roll" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Seperator_Roll" min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="To_Cone" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="To_BrownRice" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="Avo_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Avo Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Osinko_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Osinko Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Unagi_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Unagi Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Yam_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Yam Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Tamago_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tamago Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Kappa_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Kappa Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Cali_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cali Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Chicken_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Chicken Roll"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Chicken_RollActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Sal_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sal Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Beef_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Beef Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Dyna_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Dyna Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Tuna_Roll">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tuna Roll"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="Seperator_Roll">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="To_Cone">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-&gt; Cone"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="To_BrownRice">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-&gt; Brown Rice"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel11">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Nigiri">
+                        <Property name="tabTitle" type="java.lang.String" value="Nigiri"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jSeparator2" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jButton34" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton39" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton40" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton44" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jButton35" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton38" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton41" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton43" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jButton36" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton37" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton42" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton45" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jButton46" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton47" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton34" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton39" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton40" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton44" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton35" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton38" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton41" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton43" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton36" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton37" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton42" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jButton45" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton46" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="jButton47" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="jButton34">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tamago"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton35">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tuna"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton36">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tobiko"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton37">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Saba"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton38">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Salmon"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton39">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Hokkigai"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton40">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Inari"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton41">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ebi"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton41ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton42">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tako"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton43">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Masago"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton44">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tai"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton45">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Unagi"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator2">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton46">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-&gt; Seared"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton47">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-&gt; Brown Rice"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel12">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Udon">
+                        <Property name="tabTitle" type="java.lang.String" value="Udon"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Separator_Udon" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Plain_Udon" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Chi_Udon" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Beef_Udon" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Tem_Udon" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Miso_Ramen" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Shoyu_Ramen" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Spicy_Ramen" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="To_Yaki" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Plain_Udon" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Chi_Udon" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Beef_Udon" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Tem_Udon" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Miso_Ramen" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Shoyu_Ramen" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Spicy_Ramen" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                              <Component id="Separator_Udon" min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="To_Yaki" min="-2" pref="45" max="-2" attributes="0"/>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="Plain_Udon">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Plain Udon"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Miso_Ramen">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Miso Ramen"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Shoyu_Ramen">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Shoyu Ramen"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Chi_Udon">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Chi Udon"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Beef_Udon">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Beef Udon"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Spicy_Ramen">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Spicy Ramen"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Spicy_RamenActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Tem_Udon">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tem Udon"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="Separator_Udon">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="To_Yaki">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-&gt;  Yaki"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel13">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Combo">
+                        <Property name="tabTitle" type="java.lang.String" value="Combo"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Separator_Combo" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="Dyna_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Tu_Sal_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Sp_Tuna_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="Sp_Sal_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Kids_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Cali_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="BC_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Mix_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Assorted_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="DLX_Combo" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="To_BrownRiceC" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Kids_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Cali_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="BC_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Mix_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Dyna_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Tu_Sal_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Sp_Tuna_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Sp_Sal_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Assorted_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="DLX_Combo" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Separator_Combo" min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="To_BrownRiceC" min="-2" pref="45" max="-2" attributes="0"/>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="Kids_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Kids Combo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Dyna_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Dyna Combo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Tu_Sal_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tu Sal Combo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Cali_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cali Combo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="BC_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="BC Combo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Sp_Tuna_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sp Tuna Com"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Sp_Tuna_ComboActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Mix_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Mix Combo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Sp_Sal_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sp Sal Combo"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Sp_Sal_ComboActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Assorted_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Assorted Com"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Assorted_ComboActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="DLX_Combo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="DLX Combo"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DLX_ComboActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="Separator_Combo">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="To_BrownRiceC">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-&gt; Brown Rice"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel14">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Drink">
+                        <Property name="tabTitle" type="java.lang.String" value="Drink"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="Sm_Sake" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Nestea" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Orange_Juice" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Apple_Juice" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="Ice_Cream" min="-2" pref="110" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="Coke" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Diet_Coke" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Sprite" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Ginger_Ale" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="Coffee" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="Sm_Beer" alignment="0" pref="110" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Lg_Beer" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                                      <Component id="Lg_Sake" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Coke" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Diet_Coke" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Sprite" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Ginger_Ale" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Nestea" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Orange_Juice" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Apple_Juice" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="Ice_Cream" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Sm_Beer" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                      <Component id="Lg_Beer" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="Sm_Sake" max="32767" attributes="0"/>
+                                  <Component id="Lg_Sake" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Coffee" pref="73" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="Coke">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Coke"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Nestea">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nestea"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Orange_Juice">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Orange Juice"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Diet_Coke">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Diet Coke"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Sprite">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sprite"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Apple_Juice">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Apple Juice"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Apple_JuiceActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Ginger_Ale">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ginger Ale"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Ice_Cream">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ice Cream"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Ice_CreamActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Sm_Beer">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sm Beer"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Sm_BeerActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Lg_Beer">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lg Beer"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Lg_BeerActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Sm_Sake">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sm Sake"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Lg_Sake">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lg Sake"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Coffee">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Coffee"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel15">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Else">
+                        <Property name="tabTitle" type="java.lang.String" value="Else"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="464" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="322" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Panel_No">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="No_Cucumber" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Sauce_On_Side" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="No_Wasabi" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="No_Ginger" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="No_Wasabi" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="No_Ginger" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="No_Cucumber" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="Sauce_On_Side" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="No_Cucumber">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="No Cucumber"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[108, 29]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="Sauce_On_Side">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sauce on Side"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[108, 29]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="No_Wasabi">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="No wasabi"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[108, 29]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="No_Ginger">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="No ginger"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[108, 29]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="Panel_Function">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="Discount" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Split" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Seperator" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Quantity" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="EditPrice" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Delete" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Split" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Delete" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Seperator" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Quantity" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="EditPrice" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Discount" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="Split">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Split"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Discount">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Discount"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DiscountActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="Delete">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Delete"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Seperator">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Seperator"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Quantity">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quantity"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="EditPrice">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Edit $"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="Panel_Bill">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Reprint" max="32767" attributes="0"/>
+                          <Component id="Void" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Payment" min="-2" pref="87" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Invoice" min="-2" pref="84" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Order" min="-2" pref="96" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Back" min="-2" pref="97" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Reprint" min="-2" pref="37" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                              <Component id="Void" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Order" alignment="3" min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="Payment" alignment="3" min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="Back" alignment="3" min="-2" pref="77" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="Invoice" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="Reprint">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="REPRINT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Order">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ORDER"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Void">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="VOID"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Payment">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Payment"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Back">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="BACK"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="Invoice">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Invoice"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
