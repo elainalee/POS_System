@@ -24,6 +24,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import POS.Variables;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 
 /**
  *
@@ -444,23 +445,11 @@ public class Clock_In_Out extends javax.swing.JFrame{
     private void INActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_INActionPerformed
         try {
             IN.setEnabled(false);
-            PrintWriter context;
-            // !!! If pressed, need to check if the okay button has worked (if employee number exists)
-            //  - If yes && the employee has not clocked in yet: let them clock into the system
-            //  - If not, disable this button
-            SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
-            Date date = new Date(System.currentTimeMillis());
-            System.out.println(formatter.format(date));
-            
             IN.setBackground(Color.WHITE);
             String GivenPassword = Password.getText();
             
-            String LocationOfFile = "/Users/jennifer/NetBeansProjects/POS System/src/files/_" + GivenPassword;
-            context = new PrintWriter(new FileWriter(LocationOfFile, true));
-            
-            context.println("IN" + " : " + formatter.format(date));
-            JOptionPane.showMessageDialog(null, GivenPassword + " has been clocked in.");
-            context.close();
+            addClockInToEmployeeFile(GivenPassword);
+            addEmployeeToClockInEmployeeFile(GivenPassword);
             
             enableButtons();
         } catch (IOException ex) {
@@ -472,10 +461,7 @@ public class Clock_In_Out extends javax.swing.JFrame{
         try {
             IN.setEnabled(false);
             PrintWriter context;
-            // !!! If pressed, need to check if the okay button has worked (If employee number exists)
-            //  - If yes && the employee has not clock in: print out the message - ___ worked from ___ to ___
-            //      then save to the system
-            //  - If not: disable the button
+            
             SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
             Date date = new Date(System.currentTimeMillis());
             System.out.println(formatter.format(date));
@@ -597,5 +583,28 @@ public class Clock_In_Out extends javax.swing.JFrame{
     public ArrayList<String> splitOnSpace(String line) {
         String[] splits = line.split(" : ");
         return new ArrayList<>(Arrays.asList(splits)); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void addEmployeeToClockInEmployeeFile(String employeeNum) throws IOException {
+        PrintWriter theEmployee;
+        theEmployee = new PrintWriter(new FileWriter("/Users/jennifer/NetBeansProjects/POS System/src/files/clockedIn_employee", true));
+        Variables variable = new Variables();
+        theEmployee.print(" : " + variable.employeeFirstNameIs(employeeNum));
+        theEmployee.close();
+    }
+
+    private void addClockInToEmployeeFile(String employeeNum) throws IOException {
+        // Gives the clock in time in appropriate format
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+        Date date = new Date(System.currentTimeMillis());
+        System.out.println(formatter.format(date));
+        // write to the employee's file (the time they clocked in)
+        PrintWriter context;
+        String LocationOfFile = "/Users/jennifer/NetBeansProjects/POS System/src/files/_" + employeeNum;
+        context = new PrintWriter(new FileWriter(LocationOfFile, true));
+        context.println("IN" + " : " + formatter.format(date));
+        // shows the message that the employee successfully clocked in
+        JOptionPane.showMessageDialog(null, employeeNum + " has been clocked in.");
+        context.close();
     }
 }
